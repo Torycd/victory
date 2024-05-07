@@ -7,6 +7,7 @@ import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 // import { usePathname } from "next/navigation";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -27,10 +28,12 @@ const Navbar = () => {
   return (
     <div
       className={
-        shadow ? "fixed w-full h-20 shadow-xl z-100" : "fixed w-full h-20 z-100"
+        shadow
+          ? "fixed w-full h-28 shadow-xl z-100  bg-black bg-gradient-to-r from-white"
+          : "fixed w-full h-28 z-100  bg-black bg-gradient-to-r from-white"
       }
     >
-      <div className="flex justify-between items-center max-w-[1440px] px-2 mx-auto h-full  2xl:px-16">
+      <div className="flex justify-between items-center max-w-[1440px] px-2 mx-auto h-full text-white 2xl:px-16">
         {/* logo */}
         <div className="w-16 h-12 md:w-32 md:h-16 relative">
           <Link href="/">
@@ -38,27 +41,78 @@ const Navbar = () => {
           </Link>
         </div>
         {/* Other content */}
-        <div>
-          <ul className="hidden md:flex space-x-10 py-4">
-            <Link href="/">
-              <li className="text-sm uppercase hover:border-b-2">Home</li>
-            </Link>
-            <Link href="/#about">
-              <li className="text-sm uppercase hover:border-b-2">About</li>
-            </Link>
-            <Link href="/#skills">
-              <li className="text-sm uppercase hover:border-b-2">Skills</li>
-            </Link>
-            <Link href="/#projects">
-              <li className=" text-sm uppercase hover:border-b-2">Projects</li>
-            </Link>
-            <Link href="/#contact">
-              <li className="text-sm uppercase hover:border-b-2">Contacts</li>
-            </Link>
-          </ul>
-          <div onClick={handleNavigation} className="md:hidden">
-            <AiOutlineMenu size={30} />
+
+        {/* icons ontop */}
+        <div className="hidden md:flex items-center justify-between gap-4 my-4">
+          <a
+            href="https://www.linkedin.com/in/victory-idundun-388636247/"
+            target="_blank"
+            className="rounded-full bg-white hover:bg-gray-200 shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300"
+          >
+            <FaLinkedinIn className="text-black" />
+          </a>
+          <a
+            href="https://github.com/Torycd"
+            target="_blank"
+            className="rounded-full bg-white hover:bg-gray-200  shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300"
+          >
+            <FaGithub className="text-black" />
+          </a>
+          <a
+            href="mailto:vicidundun@gmail.com"
+            target="_blank"
+            className="rounded-full bg-white hover:bg-gray-200  shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300"
+          >
+            <AiOutlineMail className="text-black" />
+          </a>
+          <div className="rounded-full bg-white hover:bg-gray-200  shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+            <BsFillPersonLinesFill className="text-black" />
           </div>
+        </div>
+        <ul className="hidden md:flex items-center space-x-10 py-4 font-bold">
+          <Link href="/">
+            <motion.li
+              className="text-sm uppercase hover:border-b-2"
+              whileHover={{ scale: 1.1 }}
+            >
+              Home
+            </motion.li>
+          </Link>
+          <Link href="/#about">
+            <motion.li
+              className="text-sm uppercase hover:border-b-2"
+              whileHover={{ scale: 1.1 }}
+            >
+              About
+            </motion.li>
+          </Link>
+          <Link href="/#skills">
+            <motion.li
+              className="text-sm uppercase hover:border-b-2"
+              whileHover={{ scale: 1.1 }}
+            >
+              Skills
+            </motion.li>
+          </Link>
+          <Link href="/#projects">
+            <motion.li
+              className="text-sm uppercase hover:border-b-2"
+              whileHover={{ scale: 1.1 }}
+            >
+              Projects
+            </motion.li>
+          </Link>
+          <Link href="/#contact">
+            <motion.li
+              className="text-sm uppercase hover:border-b-2"
+              whileHover={{ scale: 1.1 }}
+            >
+              Contacts
+            </motion.li>
+          </Link>
+        </ul>
+        <div onClick={handleNavigation} className="md:hidden">
+          <AiOutlineMenu size={30} />
         </div>
       </div>
 
@@ -102,7 +156,7 @@ const Navbar = () => {
           </div>
           {/* nav item */}
           <div className="py-4 flex flex-col">
-            <ul className="uppercase">
+            <ul className="uppercase font-bold">
               <Link href="/">
                 <li onClick={() => setNav(false)} className="py-4 text-sm">
                   Home
