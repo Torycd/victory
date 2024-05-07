@@ -1,7 +1,4 @@
 import React from "react";
-import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import { BsFillPersonLinesFill } from "react-icons/bs";
 
 const Main = () => {
   return (
@@ -22,32 +19,6 @@ const Main = () => {
             enriching my toolkit with the power of shell scripting and Linux
             proficiency.
           </p>
-          <div className="flex items-center justify-between max-w-[320px] m-auto py-4">
-            <a
-              href="https://www.linkedin.com/in/victory-idundun-388636247/"
-              target="_blank"
-              className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300"
-            >
-              <FaLinkedinIn />
-            </a>
-            <a
-              href="https://github.com/Torycd"
-              target="_blank"
-              className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300"
-            >
-              <FaGithub />
-            </a>
-            <a
-              href="mailto:vicidundun@gmail.com"
-              target="_blank"
-              className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300"
-            >
-              <AiOutlineMail />
-            </a>
-            <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-              <BsFillPersonLinesFill />
-            </div>
-          </div>
         </div>
       </div>
     </div>
