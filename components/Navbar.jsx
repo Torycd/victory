@@ -22,6 +22,7 @@ const Navbar = () => {
         setShadow(false);
       }
     };
+    window.addEventListener("scroll", handleShadow);
   }, []);
   return (
     <div
