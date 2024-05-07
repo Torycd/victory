@@ -6,7 +6,7 @@ import Image from "next/image";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
-import { usePathname } from "next/navigation";
+// import { usePathname } from "next/navigation";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -14,41 +14,45 @@ const Navbar = () => {
   const handleNavigation = () => {
     setNav(!nav);
   };
-  useEffect(() => {}, []);
+  useEffect(() => {
+    const handleShadow = () => {
+      if (window.scrollY >= 90) {
+        setShadow(true);
+      } else {
+        setShadow(false);
+      }
+    };
+  }, []);
   return (
     <div
       className={
         shadow ? "fixed w-full h-20 shadow-xl z-100" : "fixed w-full h-20 z-100"
       }
     >
-      <div className="flex justify-between items-center max-w-[1240px] px-2 mx-auto h-full  2xl:px-16">
+      <div className="flex justify-between items-center max-w-[1440px] px-2 mx-auto h-full  2xl:px-16">
         {/* logo */}
-        <div className="w-32 h-16 relative">
+        <div className="w-16 h-12 md:w-32 md:h-16 relative">
           <Link href="/">
             <Image src="/assets/Logo.png" alt="Victory's Image" layout="fill" />
           </Link>
         </div>
         {/* Other content */}
         <div>
-          <ul className="hidden md:flex">
+          <ul className="hidden md:flex space-x-10 py-4">
             <Link href="/">
-              <li className="ml-10 text-sm uppercase hover:border-b">Home</li>
+              <li className="text-sm uppercase hover:border-b-2">Home</li>
             </Link>
             <Link href="/#about">
-              <li className="ml-10 text-sm uppercase hover:border-b">About</li>
+              <li className="text-sm uppercase hover:border-b-2">About</li>
             </Link>
             <Link href="/#skills">
-              <li className="ml-10 text-sm uppercase hover:border-b">Skills</li>
+              <li className="text-sm uppercase hover:border-b-2">Skills</li>
             </Link>
             <Link href="/#projects">
-              <li className="ml-10 text-sm uppercase hover:border-b">
-                Projects
-              </li>
+              <li className=" text-sm uppercase hover:border-b-2">Projects</li>
             </Link>
             <Link href="/#contact">
-              <li className="ml-10 text-sm uppercase hover:border-b">
-                Contacts
-              </li>
+              <li className="text-sm uppercase hover:border-b-2">Contacts</li>
             </Link>
           </ul>
           <div onClick={handleNavigation} className="md:hidden">
@@ -129,18 +133,30 @@ const Navbar = () => {
                 Lets Connect
               </p>
               <div className="flex items-center justify-between my-4 w-full sm:w-[20%]">
-                <a className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                <a
+                  href="https://www.linkedin.com/in/victory-idundun-388636247/"
+                  target="_blank"
+                  className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300"
+                >
                   <FaLinkedinIn />
                 </a>
-                <a className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                <a
+                  href="https://github.com/Torycd"
+                  target="_blank"
+                  className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300"
+                >
                   <FaGithub />
                 </a>
-                <a className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                <a
+                  href="mailto:vicidundun@gmail.com"
+                  target="_blank"
+                  className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300"
+                >
                   <AiOutlineMail />
                 </a>
-                <a className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                   <BsFillPersonLinesFill />
-                </a>
+                </div>
               </div>
             </div>
           </div>
