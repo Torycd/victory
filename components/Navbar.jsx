@@ -29,11 +29,11 @@ const Navbar = () => {
     <div
       className={
         shadow
-          ? "fixed w-full h-20  sm:h-28 shadow-xl z-100 bg-black bg-gradient-to-r from-white"
-          : "fixed w-full h-20 sm:h-28 z-100  bg-black bg-gradient-to-r from-white"
+          ? "fixed w-full h-20  sm:h-28 shadow-xl z-100 bg-white"
+          : "fixed w-full h-20 sm:h-28 z-100  bg-white"
       }
     >
-      <div className="flex justify-between items-center max-w-[1440px] px-2 mx-auto h-full text-white 2xl:px-16">
+      <div className="flex justify-between items-center max-w-[1440px] px-2 mx-auto h-full text-black 2xl:px-16">
         {/* logo */}
         <div className="w-16 h-12 md:w-32 md:h-16 relative">
           <Link href="/">
