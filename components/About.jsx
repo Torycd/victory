@@ -12,7 +12,7 @@ const About = () => {
       <h2 className="py-4">Who I Am</h2>
       <div className="max-w-[1240px] m-auto md:grid md:grid-cols-3 gap-8">
         <div className="col-span-1 md:text-right">
-          <h2 className="py-4">Frontend</h2>
+          <h2 className="py-4">Frontend Developer</h2>
           <p className="py-2  text-gray-600">
             I specialize in building mobile-responsive front-end UI applications
             that seamlessly connect with APIs and diverse backend technologies.
