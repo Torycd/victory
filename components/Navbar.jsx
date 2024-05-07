@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
@@ -10,11 +10,17 @@ import { usePathname } from "next/navigation";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
+  const [shadow, setShadow] = useState(false);
   const handleNavigation = () => {
     setNav(!nav);
   };
+  useEffect(() => {}, []);
   return (
-    <div className="fixed w-full h-20 shadow-xl z-100">
+    <div
+      className={
+        shadow ? "fixed w-full h-20 shadow-xl z-100" : "fixed w-full h-20 z-100"
+      }
+    >
       <div className="flex justify-between items-center max-w-[1240px] px-2 mx-auto h-full  2xl:px-16">
         {/* logo */}
         <div className="w-32 h-16 relative">
@@ -67,10 +73,14 @@ const Navbar = () => {
           <div className="flex w-full items-center justify-between">
             {/* logo */}
             <div className="w-16 h-12 relative">
-          <Link href="/">
-            <Image src="/assets/Logo.png" alt="Victory's Image" layout="fill" />
-          </Link>
-        </div>
+              <Link href="/">
+                <Image
+                  src="/assets/Logo.png"
+                  alt="Victory's Image"
+                  layout="fill"
+                />
+              </Link>
+            </div>
             {/* close home */}
             <div
               onClick={handleNavigation}
