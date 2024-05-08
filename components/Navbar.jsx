@@ -33,7 +33,12 @@ const Navbar = () => {
           : "fixed w-full h-20 sm:h-28 z-100  bg-black"
       }
     >
-      <div className="flex justify-between items-center px-2 mx-auto h-full text-black 2xl:px-16">
+      <motion.div
+        className="flex justify-between items-center px-2 mx-auto h-full text-black 2xl:px-16"
+        initial={{ opacity: 0, scale: 0.8 }} // Initial animation state
+        animate={{ opacity: 1, scale: 1, rotate: 360 }} // Animation when component is mounted
+        transition={{ duration: 0.5 }}
+      >
         {/* logo */}
         <div className="w-16 h-12 md:w-32 md:h-16 relative">
           <Link href="/">
@@ -114,7 +119,7 @@ const Navbar = () => {
         <div onClick={handleNavigation} className="md:hidden">
           <AiOutlineMenu className="text-white" size={30} />
         </div>
-      </div>
+      </motion.div>
 
       <div
         className={
