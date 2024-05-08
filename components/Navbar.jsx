@@ -91,15 +91,8 @@ const Navbar = () => {
               About
             </motion.li>
           </Link>
-          <Link href="/skills">
-            <motion.li
-              className="text-sm uppercase hover:border-b-2"
-              whileHover={{ scale: 1.1 }}
-            >
-              Skills
-            </motion.li>
-          </Link>
-          <Link href="/#projects">
+          
+          <Link href="/projects">
             <motion.li
               className="text-sm uppercase hover:border-b-2"
               whileHover={{ scale: 1.1 }}
@@ -172,12 +165,8 @@ const Navbar = () => {
                   About
                 </li>
               </Link>
-              <Link href="/skills">
-                <li onClick={() => setNav(false)} className="py-4 text-sm">
-                  Skills
-                </li>
-              </Link>
-              <Link href="/#projects">
+             
+              <Link href="/projects">
                 <li onClick={() => setNav(false)} className="py-4 text-sm">
                   Projects
                 </li>
