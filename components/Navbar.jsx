@@ -29,11 +29,11 @@ const Navbar = () => {
     <div
       className={
         shadow
-          ? "fixed w-full h-20  sm:h-28 shadow-xl z-100 bg-white"
-          : "fixed w-full h-20 sm:h-28 z-100  bg-white"
+          ? "fixed w-full h-20  sm:h-28 shadow-xl z-100 bg-black"
+          : "fixed w-full h-20 sm:h-28 z-100  bg-black"
       }
     >
-      <div className="flex justify-between items-center max-w-[1440px] px-2 mx-auto h-full text-black 2xl:px-16">
+      <div className="flex justify-between items-center px-2 mx-auto h-full text-black 2xl:px-16">
         {/* logo */}
         <div className="w-16 h-12 md:w-32 md:h-16 relative">
           <Link href="/">
@@ -69,7 +69,7 @@ const Navbar = () => {
             <BsFillPersonLinesFill className="text-black" />
           </div>
         </div>
-        <ul className="hidden md:flex items-center space-x-10 py-4 font-bold">
+        <ul className="hidden text-white md:flex items-center space-x-10 py-4 font-bold">
           <Link href="/">
             <motion.li
               className="text-sm uppercase hover:border-b-2"
@@ -78,7 +78,7 @@ const Navbar = () => {
               Home
             </motion.li>
           </Link>
-          <Link href="/#about">
+          <Link href="/about">
             <motion.li
               className="text-sm uppercase hover:border-b-2"
               whileHover={{ scale: 1.1 }}
@@ -86,7 +86,7 @@ const Navbar = () => {
               About
             </motion.li>
           </Link>
-          <Link href="/#skills">
+          <Link href="/skills">
             <motion.li
               className="text-sm uppercase hover:border-b-2"
               whileHover={{ scale: 1.1 }}
@@ -112,7 +112,7 @@ const Navbar = () => {
           </Link>
         </ul>
         <div onClick={handleNavigation} className="md:hidden">
-          <AiOutlineMenu size={30} />
+          <AiOutlineMenu className="text-white" size={30} />
         </div>
       </div>
 
@@ -162,12 +162,12 @@ const Navbar = () => {
                   Home
                 </li>
               </Link>
-              <Link href="/#about">
+              <Link href="/about">
                 <li onClick={() => setNav(false)} className="py-4 text-sm">
                   About
                 </li>
               </Link>
-              <Link href="/#skills">
+              <Link href="/skills">
                 <li onClick={() => setNav(false)} className="py-4 text-sm">
                   Skills
                 </li>

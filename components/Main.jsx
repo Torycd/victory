@@ -2,11 +2,11 @@ import React from "react";
 
 const Main = () => {
   return (
-    <div className="w-full h-screen text-center bg-gray-200 bg-gradient-to-b from-white via-gray-200 to-white">
-      <div className="max-w-[1440px] w-full h-full mx-auto p-2 flex justify-center items-center">
+    <div className="w-full h-screen text-center">
+      <div className="bg-black w-full h-full mx-auto p-2 flex justify-center items-center">
         <div>
           <h1 className="py-4 text-gray-700 ">
-            Hi, I&apos;m <span className="text-[#5651e5]">Victory</span>
+            Hi, I&apos;m <span className="text-white">Victory</span>
           </h1>
           <h1 className="py-2 text-gray-700 ">A FRONTEND DEVELOPER</h1>
           <p className="py-4 text-gray-400 max-w-[70%] m-auto">
