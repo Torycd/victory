@@ -6,7 +6,7 @@ import Image from "next/image";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
-// import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { motion } from "framer-motion";
 
 const Navbar = () => {
@@ -15,6 +15,9 @@ const Navbar = () => {
   const handleNavigation = () => {
     setNav(!nav);
   };
+  const router = useRouter()
+ 
+  const path = usePathname()
   useEffect(() => {
     const handleShadow = () => {
       if (window.scrollY >= 90) {
@@ -35,19 +38,15 @@ const Navbar = () => {
     >
       <motion.div
         className="flex justify-between items-center px-2 mx-auto h-full text-black 2xl:px-16"
-        initial={{ opacity: 0, scale: 0.8 }} // Initial animation state
-        animate={{ opacity: 1, scale: 1, rotate: 360 }} // Animation when component is mounted
+        initial={{ opacity: 0, scale: 0.8 }}
+        animate={{ opacity: 1, scale: 1, rotate: 360 }}
         transition={{ duration: 0.5 }}
       >
-        {/* logo */}
         <div className="w-16 h-12 md:w-32 md:h-16 relative">
           <Link href="/">
             <Image src="/assets/Logo.png" alt="Victory's Image" layout="fill" />
           </Link>
         </div>
-        {/* Other content */}
-
-        {/* icons ontop */}
         <div className="hidden md:flex items-center justify-between gap-4 my-4">
           <a
             href="https://www.linkedin.com/in/victory-idundun-388636247/"
@@ -77,7 +76,7 @@ const Navbar = () => {
         <ul className="hidden text-white md:flex items-center space-x-10 py-4 font-bold">
           <Link href="/">
             <motion.li
-              className="text-sm uppercase hover:border-b-2"
+              className={`text-sm uppercase hover:border-b-2 ${path === '/' ? 'border-b-2' : ''}`}
               whileHover={{ scale: 1.1 }}
             >
               Home
@@ -85,24 +84,24 @@ const Navbar = () => {
           </Link>
           <Link href="/about">
             <motion.li
-              className="text-sm uppercase hover:border-b-2"
+              className={`text-sm uppercase hover:border-b-2 ${path === '/about' ? 'border-b-2' : ''}`}
               whileHover={{ scale: 1.1 }}
             >
               About
             </motion.li>
           </Link>
-          
+
           <Link href="/projects">
             <motion.li
-              className="text-sm uppercase hover:border-b-2"
+              className={`text-sm uppercase hover:border-b-2 ${path === '/projects' ? 'border-b-2' : ''}`}
               whileHover={{ scale: 1.1 }}
             >
               Projects
             </motion.li>
           </Link>
-          <Link href="/#contact">
+          <Link href="/contact">
             <motion.li
-              className="text-sm uppercase hover:border-b-2"
+              className={`text-sm uppercase hover:border-b-2 ${path === '/contact' ? 'border-b-2' : ''}`}
               whileHover={{ scale: 1.1 }}
             >
               Contacts
@@ -165,7 +164,7 @@ const Navbar = () => {
                   About
                 </li>
               </Link>
-             
+
               <Link href="/projects">
                 <li onClick={() => setNav(false)} className="py-4 text-sm">
                   Projects

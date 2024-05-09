@@ -7,8 +7,8 @@ import project4 from "@/public/assets/project/project4.jpg"
 
 const Projects = () => {
   return (
-    <div className="flex flex-col w-[1240px] 2xl:px-16  mx-auto justify-center pt-32 items-center px-2">
-      <div className="mx-auto px-2 py-10">
+    <div className="w-full 2xl:px-16 pt-32 px-2">
+      <div className="mx-auto px-2 mt-10">
         <div className="grid md:grid-cols-2 gap-8">
           <ProjectItem
             title="Property Finder"
