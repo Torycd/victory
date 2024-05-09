@@ -11,14 +11,14 @@ const Projects = () => {
       <div className="mx-auto px-2 mt-10">
         <div className="grid md:grid-cols-2 gap-8">
           <ProjectItem
-            title="Property Finder"
+            title="Ip Address Finder"
             backgroundImg={project1}
-            projectUrl="/projects/property"
+            projectUrl="/projects/ipaddress"
           />
            <ProjectItem
-            title="Crypto App"
+            title="Shortly"
             backgroundImg={project2}
-            projectUrl="/projects/Crypto"
+            projectUrl="/projects/shortly"
           />
            <ProjectItem
             title="Netflix App"
