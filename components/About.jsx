@@ -4,7 +4,7 @@ import contact from "../public/assets/contact.jpg"
 
 const About = () => {
   return (
-    <div className="w-full">
+    <div id="about" className="w-full">
       <div className="max-w-[1200px] mx-auto">
         <div className="grid sm:grid-cols-2 gap-10">
           <div className="col-span-1">
