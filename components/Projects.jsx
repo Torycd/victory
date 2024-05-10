@@ -12,11 +12,11 @@ const Projects = () => {
         <div className="grid md:grid-cols-2 gap-5">
           {/* image */}
           <div className="col-span-1">
-            <Image src={netflix} alt="Netflix project" />
+            <Image src={netflix} className="rounded-lg" alt="Netflix project" />
           </div>
           {/* Details of Projects */}
           <div className="col-span-1">
-            <h2>Netflix App</h2>
+            <h2>Netflix</h2>
             <p>
               This is a netflix replica project using user authentiation with
               login and signup using email and passowrd
@@ -31,19 +31,88 @@ const Projects = () => {
         <div className="grid md:grid-cols-2 gap-5">
           {/* image */}
           <div className="col-span-1">
-            <Image src={ipaddress} alt="Ip Address finderss" />
+            <Image
+              src={ipaddress}
+              className="rounded-lg"
+              alt="Ip Address finderss"
+            />
           </div>
           {/* Details of Projects */}
           <div className="col-span-1">
-            <h2>Netflix App</h2>
+            <h2>IP Address Finder</h2>
             <p>
               This is a netflix replica project using user authentiation with
               login and signup using email and passowrd
             </p>
             <div>
               <p>ReactJs</p>
-              <p>The MovieDB API</p>
-              <p>firebase</p>
+              <p>API</p>
+            </div>
+          </div>
+        </div>
+        <div className="grid md:grid-cols-2 gap-5">
+          {/* Details of Projects */}
+          <div className="col-span-1">
+            <h2>IP Address Finder</h2>
+            <p>
+              This is a netflix replica project using user authentiation with
+              login and signup using email and passowrd
+            </p>
+            <div>
+              <p>ReactJs</p>
+              <p>API</p>
+            </div>
+            {/* image */}
+            <div className="col-span-1">
+              <Image
+                src={ipaddress}
+                className="rounded-lg"
+                alt="Ip Address finderss"
+              />
+            </div>
+          </div>
+        </div>
+        <div className="grid md:grid-cols-2 gap-5">
+          {/* image */}
+          <div className="col-span-1">
+            <Image
+              src={ipaddress}
+              className="rounded-lg"
+              alt="Ip Address finderss"
+            />
+          </div>
+          {/* Details of Projects */}
+          <div className="col-span-1">
+            <h2>IP Address Finder</h2>
+            <p>
+              This is a netflix replica project using user authentiation with
+              login and signup using email and passowrd
+            </p>
+            <div>
+              <p>ReactJs</p>
+              <p>API</p>
+            </div>
+          </div>
+        </div>
+        <div className="grid md:grid-cols-2 gap-5">
+          {/* image */}
+          <div className="col-span-1">
+            <Image
+              src={ipaddress}
+              className="rounded-lg"
+              alt="Ip Address finderss"
+            />
+          </div>
+          {/* Details of Projects */}
+          <div className="col-span-1">
+            <h2>IP Address Finder</h2>
+            <p>
+              This is a netflix replica project using user authentiation with
+              login and signup using email and passowrd
+            </p>
+            <div>
+              <p>ReactJs</p>
+              <p>API</p>
             </div>
           </div>
         </div>
