@@ -24,7 +24,6 @@ const Projects = () => {
               <p>ReactJs</p>
               <p>The MovieDB API</p>
               <p>firebase</p>
-              <p>firestore</p>
             </div>
           </div>
         </div>
