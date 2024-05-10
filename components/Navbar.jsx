@@ -37,17 +37,17 @@ const Navbar = () => {
       }
     >
       <motion.div
-        className="flex justify-between items-center px-2 mx-auto h-full text-black 2xl:px-16"
+        className="flex justify-between items-center px-2 mx-auto h-full text-black font-bold 2xl:px-16"
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1}}
         transition={{ duration: 0.5 }}
       >
         <div className="w-16 h-12 md:w-32 md:h-16 relative">
           <Link href="/">
-            <p className="font-bold text-black">Victory.Dev</p>
+            <p className="font-bold text-2xl text-black">Victory.Dev</p>
           </Link>
         </div>
-        <div className="hidden md:flex items-center justify-between gap-4 my-4">
+        <div className="hidden items-center justify-between gap-4 my-4">
           <a
             href="https://www.linkedin.com/in/victory-idundun-388636247/"
             target="_blank"
