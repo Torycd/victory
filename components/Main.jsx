@@ -1,12 +1,12 @@
 "use client";
-import html from "../public/assets/skill/html.png"
-import css from "../public/assets/skill/css.png"
-import javascript from "../public/assets/skill/javascript.png"
-import react from "../public/assets/skill/react.png"
-import next from "../public/assets/skill/nextjs.png"
-import tailwind from "../public/assets/skill/tailwind.png"
-import firebase from "../public/assets/skill/firebase.png"
-import github from "../public/assets/skill/github1.png"
+import html from "../public/assets/skill/html.png";
+import css from "../public/assets/skill/css.png";
+import javascript from "../public/assets/skill/javascript.png";
+import react from "../public/assets/skill/react.png";
+import next from "../public/assets/skill/nextjs.png";
+import tailwind from "../public/assets/skill/tailwind.png";
+import firebase from "../public/assets/skill/firebase.png";
+import github from "../public/assets/skill/github1.png";
 import React from "react";
 import { motion } from "framer-motion";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
@@ -16,10 +16,10 @@ import myPhoto from "../public/assets/myPhoto.jpg";
 const Main = () => {
   return (
     <div className="w-full h-screen">
-      <div className="bg-white w-full h-full mx-auto p-2 flex items-center">
-        <div className="max-w-[900px] mx-auto ">
-          <div className="flex flex-col-reverse md:flex-row md:space-x-40">
-            <div className="flex flex-col justify-center gap-0 text-left">
+      <div className="w-full h-full mx-auto p-2 flex items-center">
+        <div className="max-w-[1200px] mx-auto ">
+          <div className="flex flex-col-reverse md:h-[500px] md:flex-row md:space-x-40">
+            <div className="flex flex-col justify-center gap-0 md:text-left">
               <motion.h2
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -32,12 +32,10 @@ const Main = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.4 }}
-                className="py-4 text-gray-400 text-left"
+                className="py-4 text-gray-400 md:text-left"
               >
-                I&apos;m a front-end web developer dedicated to crafting
-                outstanding digital experiences. <br /> While I have a knack for
-                design, my primary <br />
-                focus lies in building responsive front-end web applications.
+                Hi, I&apos;m Victory Idundun. A passionate frontend developer
+                based in Nigeria
               </motion.p>
               <div className="flex justify-center sm:justify-normal items-center gap-4 my-4">
                 <a
@@ -57,16 +55,20 @@ const Main = () => {
               </div>
             </div>
             <div className="hidden md:flex justify-center items-center ">
-              <div className="p-2 shadow-xl"><Image
-                src={myPhoto}
-                className=" rounded-lg object-cover"
-                alt="My photograph"
-              /></div>
-              
+              <div className="p-2 shadow-xl">
+                <Image
+                  src={myPhoto}
+                  height={480}
+                  className=" rounded-lg object-cover"
+                  alt="My photograph"
+                />
+              </div>
             </div>
           </div>
           <div className="flex flex-col sm:flex-row items-center justify-center sm:justify-normal py-5 gap-5">
-            <p className="flex text-black font-bold  self-center">Tech Stack </p>
+            <p className="flex text-black font-bold  self-center">
+              Tech Stack{" "}
+            </p>
             <div className="grid grid-cols-4 md:grid-cols-8 gap-5">
               <Image width={35} height={35} src={html} alt="" />
               <Image width={35} height={35} src={css} alt="" />
@@ -77,7 +79,6 @@ const Main = () => {
               <Image width={35} height={35} src={next} alt="" />
               <Image width={35} height={35} src={firebase} alt="" />
             </div>
-
           </div>
         </div>
       </div>
