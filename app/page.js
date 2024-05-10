@@ -1,6 +1,6 @@
 import About from "@/components/About";
 import Main from "@/components/Main";
-import Projects from "@/components/projects";
+import Projects from "../components/projects";
 
 export default function Home() {
   return (
