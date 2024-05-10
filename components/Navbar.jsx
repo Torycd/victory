@@ -15,9 +15,9 @@ const Navbar = () => {
   const handleNavigation = () => {
     setNav(!nav);
   };
-  const router = useRouter()
- 
-  const path = usePathname()
+  const router = useRouter();
+
+  const path = usePathname();
   useEffect(() => {
     const handleShadow = () => {
       if (window.scrollY >= 90) {
@@ -76,7 +76,9 @@ const Navbar = () => {
         <ul className="hidden text-white md:flex items-center space-x-10 py-4 font-bold">
           <Link href="/">
             <motion.li
-              className={`text-sm uppercase hover:border-b-2 ${path === '/' ? 'border-b-2' : ''}`}
+              className={`text-sm uppercase hover:border-b-2 ${
+                path === "/" ? "border-b-2" : ""
+              }`}
               whileHover={{ scale: 1.1 }}
             >
               Home
@@ -84,7 +86,9 @@ const Navbar = () => {
           </Link>
           <Link href="/about">
             <motion.li
-              className={`text-sm uppercase hover:border-b-2 ${path === '/about' ? 'border-b-2' : ''}`}
+              className={`text-sm uppercase hover:border-b-2 ${
+                path === "/about" ? "border-b-2" : ""
+              }`}
               whileHover={{ scale: 1.1 }}
             >
               About
@@ -93,7 +97,15 @@ const Navbar = () => {
 
           <Link href="/projects">
             <motion.li
-              className={`text-sm uppercase hover:border-b-2 ${path === '/projects' ? 'border-b-2' : ''}`}
+              className={`text-sm uppercase hover:border-b-2 ${
+                path === "/projects" ||
+                path === "/projects/ipaddress" ||
+                path === "/projects/shortly" ||
+                path === "/projects/studio" ||
+                path === "/projects/space"
+                  ? "border-b-2"
+                  : ""
+              }`}
               whileHover={{ scale: 1.1 }}
             >
               Projects
@@ -101,7 +113,9 @@ const Navbar = () => {
           </Link>
           <Link href="/contact">
             <motion.li
-              className={`text-sm uppercase hover:border-b-2 ${path === '/contact' ? 'border-b-2' : ''}`}
+              className={`text-sm uppercase hover:border-b-2 ${
+                path === "/contact" ? "border-b-2" : ""
+              }`}
               whileHover={{ scale: 1.1 }}
             >
               Contacts
