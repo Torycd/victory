@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 const Main = () => {
   return (
     <div className="w-full h-screen text-center">
-      <div className="bg-black w-full h-full mx-auto p-2 flex justify-center items-center">
+      <div className="bg-gray-100 w-full h-full mx-auto p-2 flex justify-center items-center">
         <div>
           <motion.h1
             initial={{ opacity: 0, y: -20 }}
@@ -18,7 +18,7 @@ const Main = () => {
             <motion.span
               whileHover={{ scale: 1.2, color: "#FFD700", rotate: 360 }} // Scale up, change color, and rotate on hover
               transition={{ duration: 0.5 }}
-              className="text-white"
+              className="text-gray-700"
             >
               Victory
             </motion.span>

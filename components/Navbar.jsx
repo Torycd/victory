@@ -32,19 +32,19 @@ const Navbar = () => {
     <div
       className={
         shadow
-          ? "fixed w-full h-20  sm:h-28 shadow-xl z-100 bg-black"
-          : "fixed w-full h-20 sm:h-28 z-100  bg-black"
+          ? "fixed w-full h-20  sm:h-28 shadow-xl z-100"
+          : "fixed w-full h-20 sm:h-28 z-100 "
       }
     >
       <motion.div
         className="flex justify-between items-center px-2 mx-auto h-full text-black 2xl:px-16"
         initial={{ opacity: 0, scale: 0.8 }}
-        animate={{ opacity: 1, scale: 1, rotate: 360 }}
+        animate={{ opacity: 1, scale: 1}}
         transition={{ duration: 0.5 }}
       >
         <div className="w-16 h-12 md:w-32 md:h-16 relative">
           <Link href="/">
-            <Image src="/assets/Logo.png" alt="Victory's Image" layout="fill" />
+            <p className="font-bold text-black">Victory.Dev</p>
           </Link>
         </div>
         <div className="hidden md:flex items-center justify-between gap-4 my-4">
@@ -73,21 +73,21 @@ const Navbar = () => {
             <BsFillPersonLinesFill className="text-black" />
           </div>
         </div>
-        <ul className="hidden text-white md:flex items-center space-x-10 py-4 font-bold">
+        <ul className="hidden text-black md:flex items-center space-x-10 py-4 font-bold">
           <Link href="/">
             <motion.li
-              className={`text-sm uppercase hover:border-b-2 ${
-                path === "/" ? "border-b-2" : ""
+              className={`text-sm uppercase hover:border-b-2 hover:text-black ${
+                path === "/" ? "border-b-2  border-black text-black/50" : ""
               }`}
               whileHover={{ scale: 1.1 }}
             >
               Home
             </motion.li>
           </Link>
-          <Link href="/about">
+          <Link href="/#about">
             <motion.li
-              className={`text-sm uppercase hover:border-b-2 ${
-                path === "/about" ? "border-b-2" : ""
+              className={`text-sm uppercase hover:border-b-2 hover:border-black ${
+                path === "/about" ? "border-b-2 border-black text-black/50" : ""
               }`}
               whileHover={{ scale: 1.1 }}
             >
@@ -95,15 +95,15 @@ const Navbar = () => {
             </motion.li>
           </Link>
 
-          <Link href="/projects">
+          <Link href="/#projects">
             <motion.li
-              className={`text-sm uppercase hover:border-b-2 ${
+              className={`text-sm uppercase hover:border-b-2 hover:border-black  ${
                 path === "/projects" ||
                 path === "/projects/ipaddress" ||
                 path === "/projects/shortly" ||
                 path === "/projects/studio" ||
                 path === "/projects/space"
-                  ? "border-b-2"
+                  ? "border-b-2 border-black text-black/50"
                   : ""
               }`}
               whileHover={{ scale: 1.1 }}
@@ -111,10 +111,10 @@ const Navbar = () => {
               Projects
             </motion.li>
           </Link>
-          <Link href="/contact">
+          <Link href="/#contact">
             <motion.li
-              className={`text-sm uppercase hover:border-b-2 ${
-                path === "/contact" ? "border-b-2" : ""
+              className={`text-sm uppercase hover:border-b-2 hover:border-black  ${
+                path === "/contact" ? "border-b-2 border-black text-black/50" : ""
               }`}
               whileHover={{ scale: 1.1 }}
             >
@@ -173,13 +173,13 @@ const Navbar = () => {
                   Home
                 </li>
               </Link>
-              <Link href="/about">
+              <Link href="/#about">
                 <li onClick={() => setNav(false)} className="py-4 text-sm">
                   About
                 </li>
               </Link>
 
-              <Link href="/projects">
+              <Link href="/#projects">
                 <li onClick={() => setNav(false)} className="py-4 text-sm">
                   Projects
                 </li>
