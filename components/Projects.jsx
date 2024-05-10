@@ -32,6 +32,24 @@ const Projects = () => {
             </div>
           </div>
         </div>
+        <div className="grid md:grid-cols-2 gap-5">
+          {/* Details of Projects */}
+          <div className="col-span-1">
+            <h2>Shorten Link App</h2>
+            <p>
+              This is a netflix replica project using user authentiation with
+              login and signup using email and passowrd
+            </p>
+            <div>
+              <p>ReactJs</p>
+              <p>API</p>
+            </div>
+            {/* image */}
+          </div>
+          <div className="col-span-1">
+            <Image src={shortly} className="rounded-lg" alt="Shortly" />
+          </div>
+        </div>
         {/* project 2 */}
         <div className="grid md:grid-cols-2 gap-5">
           {/* image */}
@@ -67,11 +85,11 @@ const Projects = () => {
               <p>ReactJs</p>
               <p>API</p>
             </div>
-            {/* image */}
           </div>
+          {/* image */}
           <div className="col-span-1">
             <Image
-              src={ipaddress}
+              src={space}
               className="rounded-lg"
               alt="Ip Address finderss"
             />
@@ -82,7 +100,7 @@ const Projects = () => {
           {/* image */}
           <div className="col-span-1">
             <Image
-              src={ipaddress}
+              src={loopstudio}
               className="rounded-lg"
               alt="Ip Address finderss"
             />
@@ -98,28 +116,6 @@ const Projects = () => {
               <p>ReactJs</p>
               <p>API</p>
             </div>
-          </div>
-        </div>
-        <div className="grid md:grid-cols-2 gap-5">
-          {/* Details of Projects */}
-          <div className="col-span-1">
-            <h2>IP Address Finder</h2>
-            <p>
-              This is a netflix replica project using user authentiation with
-              login and signup using email and passowrd
-            </p>
-            <div>
-              <p>ReactJs</p>
-              <p>API</p>
-            </div>
-          </div>
-          {/* image */}
-          <div className="col-span-1">
-            <Image
-              src={ipaddress}
-              className="rounded-lg"
-              alt="Ip Address finderss"
-            />
           </div>
         </div>
       </div>
