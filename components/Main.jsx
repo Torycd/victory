@@ -16,7 +16,7 @@ import myPhoto from "../public/assets/myPhoto.jpg";
 const Main = () => {
   return (
     <div className="w-full h-screen">
-      <div className="bg-gray-100 w-full h-full mx-auto p-2 flex items-center">
+      <div className="bg-white w-full h-full mx-auto p-2 flex items-center">
         <div className="max-w-[900px] mx-auto ">
           <div className="flex flex-col-reverse md:flex-row md:space-x-60">
             <div className="text-left">
@@ -39,7 +39,7 @@ const Main = () => {
                 design, my primary <br />
                 focus lies in building responsive front-end web applications.
               </motion.p>
-              <div className="flex items-center gap-4 my-4">
+              <div className="flex justify-center sm:justify-normal items-center gap-4 my-4">
                 <a
                   href="https://www.linkedin.com/in/victory-idundun-388636247/"
                   target="_blank"
@@ -56,7 +56,7 @@ const Main = () => {
                 </a>
               </div>
             </div>
-            <div className="flex justify-center items-center">
+            <div className="hidden md:flex justify-center items-center ">
               <div className="p-2 shadow-xl"><Image
                 src={myPhoto}
                 className=" rounded-lg object-cover"
@@ -65,9 +65,9 @@ const Main = () => {
               
             </div>
           </div>
-          <div className="flex py-5 gap-5">
-            <p className="text-black font-bold flex self-center">Tech Stack: </p>
-            <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-8 gap-5">
+          <div className="flex flex-col items-center justify-center py-5 gap-5">
+            <p className="flex text-black font-bold  self-center">Tech Stack </p>
+            <div className="grid grid-cols-4 md:grid-cols-8 gap-5">
               <Image width={35} height={35} src={html} alt="" />
               <Image width={35} height={35} src={css} alt="" />
               <Image width={35} height={35} src={tailwind} alt="" />

@@ -42,7 +42,7 @@ const Navbar = () => {
         animate={{ opacity: 1, scale: 1}}
         transition={{ duration: 0.5 }}
       >
-        <div className="w-16 h-12 md:w-32 md:h-16 relative">
+        <div className="relative">
           <Link href="/">
             <p className="font-bold text-2xl text-black">Victory.Dev</p>
           </Link>
@@ -123,7 +123,7 @@ const Navbar = () => {
           </Link>
         </ul>
         <div onClick={handleNavigation} className="md:hidden">
-          <AiOutlineMenu className="text-white" size={30} />
+          <AiOutlineMenu className="text-black" size={30} />
         </div>
       </motion.div>
 
