@@ -18,8 +18,8 @@ const Main = () => {
     <div className="w-full h-screen">
       <div className="bg-white w-full h-full mx-auto p-2 flex items-center">
         <div className="max-w-[900px] mx-auto ">
-          <div className="flex flex-col-reverse md:flex-row md:space-x-60">
-            <div className="text-left">
+          <div className="flex flex-col-reverse md:flex-row md:space-x-40">
+            <div className="flex flex-col justify-center gap-0 text-left">
               <motion.h2
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -32,7 +32,7 @@ const Main = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.4 }}
-                className="py-4 text-gray-400 text-left  max-w-[100%] m-auto"
+                className="py-4 text-gray-400 text-left"
               >
                 I&apos;m a front-end web developer dedicated to crafting
                 outstanding digital experiences. <br /> While I have a knack for
@@ -65,7 +65,7 @@ const Main = () => {
               
             </div>
           </div>
-          <div className="flex flex-col items-center justify-center py-5 gap-5">
+          <div className="flex flex-col sm:flex-row items-center justify-center sm:justify-normal py-5 gap-5">
             <p className="flex text-black font-bold  self-center">Tech Stack </p>
             <div className="grid grid-cols-4 md:grid-cols-8 gap-5">
               <Image width={35} height={35} src={html} alt="" />
