@@ -1,9 +1,9 @@
 import React from "react";
 import Image from "next/image";
-import project1 from "../../public/assets/project/project1.jpg";
-import project2 from "../../public/assets/project/project2.jpg";
-import project3 from "../../public/assets/project/project3.jpg";
-import project4 from "../../public/assets/project/project4.jpg";
+import project1 from "../../public/assets/project/project1.JPG"
+import project2 from "../../public/assets/project/project2.JPG"
+import project3 from "../../public/assets/project/project3.JPG"
+import project4 from "../../public/assets/project/project4.JPG"
 
 import Link from "next/link";
 
