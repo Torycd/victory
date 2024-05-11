@@ -19,12 +19,14 @@ const ProjectItem = () => {
         </div>
         {/* Details of Projects */}
         <div className="col-span-1 space-y-6">
-          <h2>Netflix</h2>
+          <h2 className="text-red-500">Netflix</h2>
           <p>
-            This is a netflix replica project using user authentiation with
-            login and signup using email and passowrd, using firestore to store
-            users data and movie selected by the user and firebase for the login
-            authentication. using tailwind for all styling
+            This Netflix replica project incorporates user authentication
+            features, including login and signup functionality via email and
+            password. It leverages Firestore to securely store user data and the
+            movies selected by users, while Firebase handles the authentication
+            process. The project&apos;s user interface is styled comprehensively
+            using Tailwind CSS.
           </p>
           <div className="flex justify-around">
             <p>ReactJs</p>
@@ -32,12 +34,20 @@ const ProjectItem = () => {
             <p>firebase</p>
           </div>
           <div className="font-bold flex justify-around">
-            <a href="https://github.com/Torycd/netflix" target="_blank" className="flex items-center gap-2">
-              <FaCode />
+            <a
+              href="https://github.com/Torycd/netflix"
+              target="_blank"
+              className="flex items-center gap-2"
+            >
+              <FaCode size={35} />
               <span>Code</span>
             </a>
-            <a href="https://netflix-rho-gold.vercel.app/" target="_blank" className="flex items-center gap-2">
-              <MdOpenInNew />
+            <a
+              href="https://netflix-rho-gold.vercel.app/"
+              target="_blank"
+              className="flex items-center gap-2"
+            >
+              <MdOpenInNew size={35} />
               <span>Demo</span>
             </a>
           </div>
@@ -46,20 +56,33 @@ const ProjectItem = () => {
 
       {/* shortly */}
       <div className="grid md:grid-cols-2 gap-5">
-        <div className="col-span-1">
-          <h2>Shorten Link App</h2>
-          <p>This is an App that helps shorten any long link</p>
+        <div className="col-span-1 space-y-6">
+          <h2 className="text-cyan-400">Shorten Link App</h2>
+          <p>
+            This is an App that helps shorten any long link, with the use os
+            tinyUrl API also where the new link i stsored in locat storage so as
+            not to lose that new link generated. the use of tailwind for the UI
+            of this project
+          </p>
           <div className="flex justify-around">
             <p>ReactJs</p>
             <p>API</p>
           </div>
           <div className="font-bold flex justify-around">
-            <a href="https://github.com/Torycd/shortlyapi" target="_blank" className="flex items-center gap-2">
-              <FaCode />
+            <a
+              href="https://github.com/Torycd/shortlyapi"
+              target="_blank"
+              className="flex items-center gap-2"
+            >
+              <FaCode size={35} />
               <span>Code</span>
             </a>
-            <a href="https://shortlyapi-smoky.vercel.app/" target="_blank" className="flex items-center gap-2">
-              <MdOpenInNew />
+            <a
+              href="https://shortlyapi-smoky.vercel.app/"
+              target="_blank"
+              className="flex items-center gap-2"
+            >
+              <MdOpenInNew size={35} />
               <span>Demo</span>
             </a>
           </div>
@@ -80,24 +103,35 @@ const ProjectItem = () => {
           />
         </div>
         {/* Details of Projects */}
-        <div className="col-span-1">
-          <h2>Ip Address App</h2>
+        <div className="col-span-1 space-y-6">
+          <h2 className="text-blue-500">Ip Address App</h2>
           <p>
-            This is a netflix replica project using user authentiation with
-            login and signup using email and passowrd
+            The IP Address App utilizes geolocation API and mapping technology
+            to seamlessly position users at their current location on the map.
+            Additionally, the application accepts input IP addresses and
+            displays their corresponding locations on the map interface.
           </p>
           <div className="flex justify-around">
             <p>ReactJs</p>
-            <p>The MovieDB API</p>
-            <p>firebase</p>
+            <p>API</p>
+            <p>Map</p>
+            <p>geolocation</p>
           </div>
           <div className="font-bold flex justify-around">
-            <a href="https://github.com/Torycd/ipaddress" target="_blank" className="flex items-center gap-2">
-              <FaCode />
+            <a
+              href="https://github.com/Torycd/ipaddress"
+              target="_blank"
+              className="flex items-center gap-2"
+            >
+              <FaCode size={35} />
               <span>Code</span>
             </a>
-            <a href="https://ipaddress-eta.vercel.app/" target="_blank" className="flex items-center gap-2">
-              <MdOpenInNew />
+            <a
+              href="https://ipaddress-eta.vercel.app/"
+              target="_blank"
+              className="flex items-center gap-2"
+            >
+              <MdOpenInNew size={35} />
               <span>Demo</span>
             </a>
           </div>
@@ -106,10 +140,13 @@ const ProjectItem = () => {
 
       {/* Space Tourism APP */}
       <div className="grid md:grid-cols-2 gap-5">
-        <div className="col-span-1">
+        <div className="col-span-1 space-y-6">
           <h2>Space Tourism App</h2>
           <p>
-            space tourism
+            The Space Tourism App serves as a practical demonstration of routing
+            within a React application, featuring numerous paths. The primary
+            objective of this project is to develop a multi-page website
+            showcasing various space views and planetary bodies.
           </p>
           <div className="flex justify-around">
             <p>ReactJs</p>
@@ -117,12 +154,20 @@ const ProjectItem = () => {
             <p>JSON</p>
           </div>
           <div className="font-bold flex justify-around">
-            <a href="https://github.com/Torycd/spacetravel" target="_blank" className="flex items-center gap-2">
-              <FaCode />
+            <a
+              href="https://github.com/Torycd/spacetravel"
+              target="_blank"
+              className="flex items-center gap-2"
+            >
+              <FaCode size={35} />
               <span>Code</span>
             </a>
-            <a href="https://spacetravel-six.vercel.app/" target="_blank" className="flex items-center gap-2">
-              <MdOpenInNew />
+            <a
+              href="https://spacetravel-six.vercel.app/"
+              target="_blank"
+              className="flex items-center gap-2"
+            >
+              <MdOpenInNew size={35} />
               <span>Demo</span>
             </a>
           </div>
@@ -143,11 +188,11 @@ const ProjectItem = () => {
           />
         </div>
         {/* Details of Projects */}
-        <div className="col-span-1">
-          <h2>Loop studio</h2>
+        <div className="col-span-1 space-y-6">
+          <h2 className="text-purple-700">Loop studio</h2>
           <p>
-            This is a netflix replica project using user authentiation with
-            login and signup using email and passowrd
+            This App Aims at the use of flex and grid, it is a site for difrrent
+            activity
           </p>
           <div className="flex justify-around">
             <p>ReactJs</p>
@@ -155,12 +200,20 @@ const ProjectItem = () => {
             <p>firebase</p>
           </div>
           <div className="font-bold flex justify-around">
-            <a href="https://github.com/Torycd/loopstudio" target="" className="flex items-center gap-2">
-              <FaCode />
+            <a
+              href="https://github.com/Torycd/loopstudio"
+              target=""
+              className="flex items-center gap-2"
+            >
+              <FaCode size={35} />
               <span>Code</span>
             </a>
-            <a href="https://loopstudio-nine-plum.vercel.app/" target="" className="flex items-center gap-2">
-              <MdOpenInNew />
+            <a
+              href="https://loopstudio-nine-plum.vercel.app/"
+              target=""
+              className="flex items-center gap-2"
+            >
+              <MdOpenInNew size={35} />
               <span>Demo</span>
             </a>
           </div>
