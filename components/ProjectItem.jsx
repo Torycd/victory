@@ -5,6 +5,8 @@ import ipaddress from "../public/assets/project/project1.JPG";
 import shortly from "../public/assets/project/project2.JPG";
 import loopstudio from "../public/assets/project/project3.JPG";
 import space from "../public/assets/project/project4.JPG";
+import { FaCode } from "react-icons/fa";
+import { MdOpenInNew } from "react-icons/md";
 
 const ProjectItem = () => {
   return (
@@ -16,16 +18,28 @@ const ProjectItem = () => {
           <Image src={netflix} className="rounded-lg" alt="Netflix project" />
         </div>
         {/* Details of Projects */}
-        <div className="col-span-1">
+        <div className="col-span-1 space-y-6">
           <h2>Netflix</h2>
           <p>
             This is a netflix replica project using user authentiation with
-            login and signup using email and passowrd
+            login and signup using email and passowrd, using firestore to store
+            users data and movie selected by the user and firebase for the login
+            authentication. using tailwind for all styling
           </p>
-          <div>
+          <div className="flex justify-around">
             <p>ReactJs</p>
             <p>The MovieDB API</p>
             <p>firebase</p>
+          </div>
+          <div className="font-bold flex justify-around">
+            <a href="" target="_blank" className="flex items-center gap-2">
+              <FaCode />
+              <span>Code</span>
+            </a>
+            <a href="" target="_blank" className="flex items-center gap-2">
+              <MdOpenInNew />
+              <span>Demo</span>
+            </a>
           </div>
         </div>
       </div>
@@ -35,9 +49,19 @@ const ProjectItem = () => {
         <div className="col-span-1">
           <h2>Shorten Link App</h2>
           <p>This is an App that helps shorten any long link</p>
-          <div>
+          <div className="flex justify-around">
             <p>ReactJs</p>
             <p>API</p>
+          </div>
+          <div className="font-bold flex justify-around">
+            <a className="flex items-center gap-2">
+              <FaCode />
+              <span>Code</span>
+            </a>
+            <a className="flex items-center gap-2">
+              <MdOpenInNew />
+              <span>Demo</span>
+            </a>
           </div>
         </div>
         <div className="col-span-1">
@@ -62,9 +86,20 @@ const ProjectItem = () => {
             This is a netflix replica project using user authentiation with
             login and signup using email and passowrd
           </p>
-          <div>
+          <div className="flex justify-around">
             <p>ReactJs</p>
-            <p>API</p>
+            <p>The MovieDB API</p>
+            <p>firebase</p>
+          </div>
+          <div className="font-bold flex justify-around">
+            <a className="flex items-center gap-2">
+              <FaCode />
+              <span>Code</span>
+            </a>
+            <a className="flex items-center gap-2">
+              <MdOpenInNew />
+              <span>Demo</span>
+            </a>
           </div>
         </div>
       </div>
@@ -77,9 +112,20 @@ const ProjectItem = () => {
             This is a netflix replica project using user authentiation with
             login and signup using email and passowrd
           </p>
-          <div>
+          <div className="flex justify-around">
             <p>ReactJs</p>
-            <p>API</p>
+            <p>The MovieDB API</p>
+            <p>firebase</p>
+          </div>
+          <div className="font-bold flex justify-around">
+            <a className="flex items-center gap-2">
+              <FaCode />
+              <span>Code</span>
+            </a>
+            <a className="flex items-center gap-2">
+              <MdOpenInNew />
+              <span>Demo</span>
+            </a>
           </div>
         </div>
         <div className="col-span-1">
@@ -104,9 +150,20 @@ const ProjectItem = () => {
             This is a netflix replica project using user authentiation with
             login and signup using email and passowrd
           </p>
-          <div>
+          <div className="flex justify-around">
             <p>ReactJs</p>
-            <p>API</p>
+            <p>The MovieDB API</p>
+            <p>firebase</p>
+          </div>
+          <div className="font-bold flex justify-around">
+            <a className="flex items-center gap-2">
+              <FaCode />
+              <span>Code</span>
+            </a>
+            <a className="flex items-center gap-2">
+              <MdOpenInNew />
+              <span>Demo</span>
+            </a>
           </div>
         </div>
       </div>
