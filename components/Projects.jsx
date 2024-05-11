@@ -37,8 +37,7 @@ const Projects = () => {
           <div className="col-span-1">
             <h2>Shorten Link App</h2>
             <p>
-              This is a netflix replica project using user authentiation with
-              login and signup using email and passowrd
+              This is an App that helps shorten any long link
             </p>
             <div>
               <p>ReactJs</p>
@@ -62,7 +61,7 @@ const Projects = () => {
           </div>
           {/* Details of Projects */}
           <div className="col-span-1">
-            <h2>IP Address Finder</h2>
+            <h2></h2>
             <p>
               This is a netflix replica project using user authentiation with
               login and signup using email and passowrd
@@ -76,7 +75,7 @@ const Projects = () => {
         <div className="grid md:grid-cols-2 gap-5">
           {/* Details of Projects */}
           <div className="col-span-1">
-            <h2>IP Address Finder</h2>
+            <h2>Space App</h2>
             <p>
               This is a netflix replica project using user authentiation with
               login and signup using email and passowrd
@@ -107,7 +106,7 @@ const Projects = () => {
           </div>
           {/* Details of Projects */}
           <div className="col-span-1">
-            <h2>IP Address Finder</h2>
+            <h2>Loop studio</h2>
             <p>
               This is a netflix replica project using user authentiation with
               login and signup using email and passowrd
