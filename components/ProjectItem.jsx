@@ -32,11 +32,11 @@ const ProjectItem = () => {
             <p>firebase</p>
           </div>
           <div className="font-bold flex justify-around">
-            <a href="" target="_blank" className="flex items-center gap-2">
+            <a href="https://github.com/Torycd/netflix" target="_blank" className="flex items-center gap-2">
               <FaCode />
               <span>Code</span>
             </a>
-            <a href="" target="_blank" className="flex items-center gap-2">
+            <a href="https://netflix-rho-gold.vercel.app/" target="_blank" className="flex items-center gap-2">
               <MdOpenInNew />
               <span>Demo</span>
             </a>
@@ -54,11 +54,11 @@ const ProjectItem = () => {
             <p>API</p>
           </div>
           <div className="font-bold flex justify-around">
-            <a className="flex items-center gap-2">
+            <a href="https://github.com/Torycd/shortlyapi" target="_blank" className="flex items-center gap-2">
               <FaCode />
               <span>Code</span>
             </a>
-            <a className="flex items-center gap-2">
+            <a href="https://shortlyapi-smoky.vercel.app/" target="_blank" className="flex items-center gap-2">
               <MdOpenInNew />
               <span>Demo</span>
             </a>
@@ -92,11 +92,11 @@ const ProjectItem = () => {
             <p>firebase</p>
           </div>
           <div className="font-bold flex justify-around">
-            <a className="flex items-center gap-2">
+            <a href="https://github.com/Torycd/ipaddress" target="_blank" className="flex items-center gap-2">
               <FaCode />
               <span>Code</span>
             </a>
-            <a className="flex items-center gap-2">
+            <a href="https://ipaddress-eta.vercel.app/" target="_blank" className="flex items-center gap-2">
               <MdOpenInNew />
               <span>Demo</span>
             </a>
@@ -109,20 +109,19 @@ const ProjectItem = () => {
         <div className="col-span-1">
           <h2>Space Tourism App</h2>
           <p>
-            This is a netflix replica project using user authentiation with
-            login and signup using email and passowrd
+            space tourism
           </p>
           <div className="flex justify-around">
             <p>ReactJs</p>
-            <p>The MovieDB API</p>
-            <p>firebase</p>
+            <p>Tailwind</p>
+            <p>JSON</p>
           </div>
           <div className="font-bold flex justify-around">
-            <a className="flex items-center gap-2">
+            <a href="https://github.com/Torycd/spacetravel" target="_blank" className="flex items-center gap-2">
               <FaCode />
               <span>Code</span>
             </a>
-            <a className="flex items-center gap-2">
+            <a href="https://spacetravel-six.vercel.app/" target="_blank" className="flex items-center gap-2">
               <MdOpenInNew />
               <span>Demo</span>
             </a>
@@ -156,11 +155,11 @@ const ProjectItem = () => {
             <p>firebase</p>
           </div>
           <div className="font-bold flex justify-around">
-            <a className="flex items-center gap-2">
+            <a href="https://github.com/Torycd/loopstudio" target="" className="flex items-center gap-2">
               <FaCode />
               <span>Code</span>
             </a>
-            <a className="flex items-center gap-2">
+            <a href="https://loopstudio-nine-plum.vercel.app/" target="" className="flex items-center gap-2">
               <MdOpenInNew />
               <span>Demo</span>
             </a>
