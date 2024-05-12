@@ -9,7 +9,7 @@ import firebase from "../public/assets/skill/firebase.png";
 import github from "../public/assets/skill/github1.png";
 import React from "react";
 import { motion } from "framer-motion";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 import Image from "next/image";
 import myPhoto from "../public/assets/myPhoto.jpg";
 
@@ -51,6 +51,11 @@ const Main = () => {
                   className="cursor-pointer hover:scale-105 ease-in duration-300"
                 >
                   <FaGithub className="text-black" size={35} />
+                </a>
+                <a href="https://twitter.com/VIdundun"
+                  target="_blank"
+                  className="cursor-pointer hover:scale-105 ease-in duration-300">
+                  <FaTwitter className="text-black" size={35}  />
                 </a>
               </div>
             </div>
