@@ -202,7 +202,7 @@ const ProjectItem = () => {
           <div className="font-bold flex justify-around">
             <a
               href="https://github.com/Torycd/loopstudio"
-              target=""
+              target="_blank"
               className="flex items-center gap-2"
             >
               <FaCode size={35} />
@@ -210,7 +210,7 @@ const ProjectItem = () => {
             </a>
             <a
               href="https://loopstudio-nine-plum.vercel.app/"
-              target=""
+              target="_blank"
               className="flex items-center gap-2"
             >
               <MdOpenInNew size={35} />

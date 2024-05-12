@@ -39,7 +39,7 @@ const Navbar = () => {
       <motion.div
         className="flex justify-between items-center px-2 mx-auto h-full text-black font-bold 2xl:px-16"
         initial={{ opacity: 0, scale: 0.8 }}
-        animate={{ opacity: 1, scale: 1}}
+        animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5 }}
       >
         <div>
@@ -142,6 +142,9 @@ const Navbar = () => {
           {/* nav top */}
           <div className="flex w-full items-center justify-between">
             {/* logo */}
+            <div>
+              <p className="font-bold text-2xl text-black">Victory.Dev</p>
+            </div>
             <div className="w-16 h-12 relative">
               <Link href="/">
                 <Image

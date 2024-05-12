@@ -15,7 +15,7 @@ import myPhoto from "../public/assets/myPhoto.jpg";
 
 const Main = () => {
   return (
-    <div className="w-full h-screen">
+    <div className="w-full h-screen px-2">
       <div className="w-full h-full mx-auto p-2 flex items-center">
         <div className="max-w-[1200px] mx-auto ">
           <div className="flex flex-col-reverse md:h-[500px] md:flex-row md:space-x-40">
