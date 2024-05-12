@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import netflix from "../public/assets/project/project0.JPG";
 import ipaddress from "../public/assets/project/project1.JPG";
 import shortly from "../public/assets/project/project2.JPG";
@@ -14,19 +15,32 @@ const ProjectItem = () => {
       {/* project1 netflix*/}
       <div className="grid md:grid-cols-2 gap-5">
         {/* image */}
-        <div className="col-span-1">
-          <Image src={netflix} className="rounded-lg" alt="Netflix project" />
+        <div className="relative col-span-1 group hover:bg-gradient-to-r from-red-100 to-red-300">
+          <Image
+            src={netflix}
+            className="rounded-lg group-hover:opacity-10 "
+            alt="Netflix project"
+          />
+          <div className="hidden group-hover:block rounded-lg absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
+            <h3 className="text-2xl text-white tracking-wider text-center">
+              netflix
+            </h3>
+            <p className="pb-4 pt-2 text-white text-center">React JS</p>
+            <Link href="/">
+              <p className="text-center p-2 rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer">
+                More Info
+              </p>
+            </Link>
+          </div>
         </div>
         {/* Details of Projects */}
         <div className="col-span-1 space-y-6">
           <h2 className="text-red-500">Netflix</h2>
           <p>
             This Netflix replica project incorporates user authentication
-            features, including login and signup functionality via email and
-            password. It leverages Firestore to securely store user data and the
+            features. It leverages Firestore to securely store user data and the
             movies selected by users, while Firebase handles the authentication
-            process. The project&apos;s user interface is styled comprehensively
-            using Tailwind CSS.
+            process.
           </p>
           <div className="flex justify-around">
             <p>ReactJs</p>
@@ -37,7 +51,7 @@ const ProjectItem = () => {
             <a
               href="https://github.com/Torycd/netflix"
               target="_blank"
-              className="flex items-center gap-2"
+              className="flex items-center gap-2 border-2 p-2 rounded-lg border-black"
             >
               <FaCode size={35} />
               <span>Code</span>
@@ -45,7 +59,7 @@ const ProjectItem = () => {
             <a
               href="https://netflix-rho-gold.vercel.app/"
               target="_blank"
-              className="flex items-center gap-2"
+              className="flex items-center gap-2 border-2 p-2 rounded-lg border-black"
             >
               <MdOpenInNew size={35} />
               <span>Demo</span>
@@ -56,7 +70,7 @@ const ProjectItem = () => {
 
       {/* shortly */}
       <div className="grid md:grid-cols-2 gap-5">
-        <div className="col-span-1 space-y-6">
+        <div className="col-span-1 space-y-6 order-2 md:order-1">
           <h2 className="text-cyan-400">Shorten Link App</h2>
           <p>
             This is an App that helps shorten any long link, with the use os
@@ -72,7 +86,7 @@ const ProjectItem = () => {
             <a
               href="https://github.com/Torycd/shortlyapi"
               target="_blank"
-              className="flex items-center gap-2"
+              className="flex items-center gap-2 border-2 p-2 rounded-lg border-black"
             >
               <FaCode size={35} />
               <span>Code</span>
@@ -80,27 +94,53 @@ const ProjectItem = () => {
             <a
               href="https://shortlyapi-smoky.vercel.app/"
               target="_blank"
-              className="flex items-center gap-2"
+              className="flex items-center gap-2 border-2 p-2 rounded-lg border-black"
             >
               <MdOpenInNew size={35} />
               <span>Demo</span>
             </a>
           </div>
         </div>
-        <div className="col-span-1">
-          <Image src={shortly} className="rounded-lg" alt="Shortly" />
+        <div className="relative col-span-1 order-1 md:order-2 group hover:bg-gradient-to-r from-cyan-200 to-cyan-400">
+          <Image
+            src={shortly}
+            className="rounded-lg group-hover:opacity-10"
+            alt="Shortly"
+          />
+          <div className="hidden group-hover:block absolute rounded-lg top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
+            <h3 className="text-2xl text-white tracking-wider text-center">
+              shortly
+            </h3>
+            <p className="pb-4 pt-2 text-white text-center">React JS</p>
+            <Link href="/">
+              <p className="text-center p-2 rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer">
+                More Info
+              </p>
+            </Link>
+          </div>
         </div>
       </div>
 
       {/* ip address */}
       <div className="grid md:grid-cols-2 gap-5">
         {/* image */}
-        <div className="col-span-1">
+        <div className="relative col-span-1 group hover:bg-gradient-to-r from-blue-100 to-blue-300">
           <Image
             src={ipaddress}
-            className="rounded-lg"
+            className="rounded-lg group-hover:opacity-10"
             alt="Ip Address finderss"
           />
+          <div className="hidden group-hover:block absolute rounded-lg top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
+            <h3 className="text-2xl text-white tracking-wider text-center">
+              Ip Address
+            </h3>
+            <p className="pb-4 pt-2 text-white text-center">React JS</p>
+            <Link href="/">
+              <p className="text-center p-2 rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer">
+                More Info
+              </p>
+            </Link>
+          </div>
         </div>
         {/* Details of Projects */}
         <div className="col-span-1 space-y-6">
@@ -121,7 +161,7 @@ const ProjectItem = () => {
             <a
               href="https://github.com/Torycd/ipaddress"
               target="_blank"
-              className="flex items-center gap-2"
+              className="flex items-center gap-2 border-2 p-2 rounded-lg border-black"
             >
               <FaCode size={35} />
               <span>Code</span>
@@ -129,7 +169,7 @@ const ProjectItem = () => {
             <a
               href="https://ipaddress-eta.vercel.app/"
               target="_blank"
-              className="flex items-center gap-2"
+              className="flex items-center gap-2 border-2 p-2 rounded-lg border-black"
             >
               <MdOpenInNew size={35} />
               <span>Demo</span>
@@ -140,12 +180,11 @@ const ProjectItem = () => {
 
       {/* Space Tourism APP */}
       <div className="grid md:grid-cols-2 gap-5">
-        <div className="col-span-1 space-y-6">
+        <div className="col-span-1 space-y-6 order-2 md:order-1">
           <h2>Space Tourism App</h2>
           <p>
             The Space Tourism App serves as a practical demonstration of routing
-            within a React application, featuring numerous paths. The primary
-            objective of this project is to develop a multi-page website
+            within a React application, featuring numerous paths a multi-page website
             showcasing various space views and planetary bodies.
           </p>
           <div className="flex justify-around">
@@ -157,7 +196,7 @@ const ProjectItem = () => {
             <a
               href="https://github.com/Torycd/spacetravel"
               target="_blank"
-              className="flex items-center gap-2"
+              className="flex items-center gap-2 border-2 p-2 rounded-lg border-black"
             >
               <FaCode size={35} />
               <span>Code</span>
@@ -165,27 +204,53 @@ const ProjectItem = () => {
             <a
               href="https://spacetravel-six.vercel.app/"
               target="_blank"
-              className="flex items-center gap-2"
+              className="flex items-center gap-2 border-2 p-2 rounded-lg border-black"
             >
               <MdOpenInNew size={35} />
               <span>Demo</span>
             </a>
           </div>
         </div>
-        <div className="col-span-1">
-          <Image src={space} className="rounded-lg" alt="Ip Address finderss" />
+        <div className="relative col-span-1 order-1 md:order-2 group hover:bg-gradient-to-r from-black/10 to-black/40">
+          <Image
+            src={space}
+            className="rounded-lg group-hover:opacity-10"
+            alt="Ip Address finderss"
+          />
+          <div className="hidden group-hover:block absolute rounded-lg top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
+            <h3 className="text-2xl text-white tracking-wider text-center">
+              Space Tourism
+            </h3>
+            <p className="pb-4 pt-2 text-white text-center">React JS</p>
+            <Link href="/">
+              <p className="text-center p-2 rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer">
+                More Info
+              </p>
+            </Link>
+          </div>
         </div>
       </div>
 
       {/* Loop studio */}
       <div className="grid md:grid-cols-2 gap-5">
         {/* image */}
-        <div className="col-span-1">
+        <div className="relative rounded-lg col-span-1 group hover:bg-gradient-to-r from-purple-200 to-purple-500">
           <Image
             src={loopstudio}
-            className="rounded-lg"
-            alt="Ip Address finderss"
+            className="rounded-lg group-hover:opacity-10"
+            alt="Ip Address finders"
           />
+           <div className="hidden group-hover:block absolute rounded-lg top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
+            <h3 className="text-2xl text-white tracking-wider text-center">
+              Space Tourism
+            </h3>
+            <p className="pb-4 pt-2 text-white text-center">React JS</p>
+            <Link href="/">
+              <p className="text-center p-2 rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer">
+                More Info
+              </p>
+            </Link>
+          </div>
         </div>
         {/* Details of Projects */}
         <div className="col-span-1 space-y-6">
@@ -203,7 +268,7 @@ const ProjectItem = () => {
             <a
               href="https://github.com/Torycd/loopstudio"
               target="_blank"
-              className="flex items-center gap-2"
+              className="flex items-center gap-2 border-2 p-2 rounded-lg border-black"
             >
               <FaCode size={35} />
               <span>Code</span>
@@ -211,7 +276,7 @@ const ProjectItem = () => {
             <a
               href="https://loopstudio-nine-plum.vercel.app/"
               target="_blank"
-              className="flex items-center gap-2"
+              className="flex items-center gap-2 border-2 p-2 rounded-lg border-black"
             >
               <MdOpenInNew size={35} />
               <span>Demo</span>
