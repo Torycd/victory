@@ -7,23 +7,29 @@ const About = () => {
     <div id="about" className="w-full px-2">
       <div className="max-w-[1200px] mx-auto">
         <div className="grid sm:grid-cols-2 gap-10">
-          <div className="relative col-span-1 group hover:bg-gradient-to-r from-orange-200 to-orange-500">
+          <div className="relative col-span-1 rounded-lg group hover:bg-gradient-to-r from-blue-200 to-blue-500">
             <Image
               src={contact}
               className="rounded-lg group-hover:opacity-10"
               alt="Laptop Image"
             />
             <div className="hidden group-hover:block absolute rounded-lg top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
-            <h3 className="text-2xl text-white tracking-wider text-center">
-              Lets Work together
-            </h3>
-            <a href="../public/assets/Comprehensive CV.pdf" className="underline" download>My Resume</a>
-            <a href="mailto:vicidundun@gmail.com" target="_blank">
-              <p className="text-center p-2 rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer">
-                Email Me now
-              </p>
-            </a>
-          </div>
+              <h3 className="text-2xl text-white tracking-wider text-center">
+                Lets Work together
+              </h3>
+              <a
+                href="/assets/Comprehensive%20CV.pdf"
+                className="underline"
+                download
+              >
+                Download my Resume
+              </a>
+              <a href="mailto:vicidundun@gmail.com" target="_blank">
+                <p className="text-center p-2 rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer">
+                  Email Me now
+                </p>
+              </a>
+            </div>
           </div>
           <div className="col-span-1 space-y-2">
             <h2 className="text-blue-600">ABOUT ME</h2>
