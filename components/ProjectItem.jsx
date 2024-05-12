@@ -4,7 +4,7 @@ import Link from "next/link";
 import netflix from "../public/assets/project/project0.JPG";
 import ipaddress from "../public/assets/project/project1.JPG";
 import shortly from "../public/assets/project/project2.JPG";
-import loopstudio from "../public/assets/project/project3.JPG";
+import dashBoard from "../public/assets/project/project5.JPG";
 import space from "../public/assets/project/project4.JPG";
 import { FaCode } from "react-icons/fa";
 import { MdOpenInNew } from "react-icons/md";
@@ -184,8 +184,8 @@ const ProjectItem = () => {
           <h2>Space Tourism App</h2>
           <p>
             The Space Tourism App serves as a practical demonstration of routing
-            within a React application, featuring numerous paths a multi-page website
-            showcasing various space views and planetary bodies.
+            within a React application, featuring numerous paths a multi-page
+            website showcasing various space views and planetary bodies.
           </p>
           <div className="flex justify-around">
             <p>ReactJs</p>
@@ -234,13 +234,13 @@ const ProjectItem = () => {
       {/* Loop studio */}
       <div className="grid md:grid-cols-2 gap-5">
         {/* image */}
-        <div className="relative rounded-lg col-span-1 group hover:bg-gradient-to-r from-purple-200 to-purple-500">
+        <div className="relative rounded-lg col-span-1 group hover:bg-gradient-to-r from-orange-200 to-orange-500">
           <Image
-            src={loopstudio}
+            src={dashBoard}
             className="rounded-lg group-hover:opacity-10"
-            alt="Ip Address finders"
+            alt="dashBoard App"
           />
-           <div className="hidden group-hover:block absolute rounded-lg top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
+          <div className="hidden group-hover:block absolute rounded-lg top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
             <h3 className="text-2xl text-white tracking-wider text-center">
               Space Tourism
             </h3>
@@ -254,19 +254,18 @@ const ProjectItem = () => {
         </div>
         {/* Details of Projects */}
         <div className="col-span-1 space-y-6">
-          <h2 className="text-purple-700">Loop studio</h2>
+          <h2 className="text-orange-500">DashBoard App</h2>
           <p>
-            This App Aims at the use of flex and grid, it is a site for difrrent
-            activity
+            This App is a dsadhboard with good UI to show the spending, budget
+            and savings of the user.
           </p>
           <div className="flex justify-around">
             <p>ReactJs</p>
-            <p>The MovieDB API</p>
-            <p>firebase</p>
+            <p>Vite</p>
           </div>
           <div className="font-bold flex justify-around">
             <a
-              href="https://github.com/Torycd/loopstudio"
+              href="https://github.com/Torycd/dashhh"
               target="_blank"
               className="flex items-center gap-2 border-2 p-2 rounded-lg border-black"
             >
@@ -274,7 +273,7 @@ const ProjectItem = () => {
               <span>Code</span>
             </a>
             <a
-              href="https://loopstudio-nine-plum.vercel.app/"
+              href="https://dashhh-eosin.vercel.app/"
               target="_blank"
               className="flex items-center gap-2 border-2 p-2 rounded-lg border-black"
             >
