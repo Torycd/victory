@@ -24,7 +24,7 @@ const Main = () => {
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.2 }}
-                className="py-2 text-black "
+                className="py-2 text-black text-center sm:text-left"
               >
                 A FRONT-END REACT DEVELOPER
               </motion.h2>
@@ -32,7 +32,7 @@ const Main = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.4 }}
-                className="py-4 text-gray-400 md:text-left"
+                className="py-4 text-gray-400 text-center sm:text-left"
               >
                 Hi, I&apos;m Victory Idundun. A passionate frontend developer
                 based in Nigeria
@@ -52,10 +52,21 @@ const Main = () => {
                 >
                   <FaGithub className="text-black" size={35} />
                 </a>
-                <a href="https://twitter.com/VIdundun"
+                <a
+                  href="https://twitter.com/VIdundun"
                   target="_blank"
-                  className="cursor-pointer hover:scale-105 ease-in duration-300">
-                  <FaTwitter className="text-black" size={35}  />
+                  className="cursor-pointer hover:scale-105 ease-in duration-300"
+                >
+                  <FaTwitter className="text-black" size={35} />
+                </a>
+              </div>
+              <div className="mt-5 flex justify-center md:justify-normal">
+                <a
+                  href="/assets/Comprehensive%20CV.pdf"
+                  className="text-center p-4 rounded-lg bg-purple-600 text-white font-bold text-lg cursor-pointer"
+                  download
+                >
+                  Download Resume
                 </a>
               </div>
             </div>
@@ -71,10 +82,11 @@ const Main = () => {
             </div>
           </div>
           <div className="flex flex-col sm:flex-row items-center justify-center sm:justify-normal py-5 gap-5">
-            <p className="flex text-black font-bold  self-center">
-              Tech Stack{" "}
-            </p>
-            <div className="grid grid-cols-4 md:grid-cols-8 gap-5">
+            <div className="flex space-x-4 text-black font-bold  self-center">
+              <p>Tech Stack</p>
+              <span className="hidden md:block">|</span>
+            </div>
+            <div className="grid grid-cols-4 md:grid-cols-8 gap-5 md:gap-10">
               <Image width={35} height={35} src={html} alt="" />
               <Image width={35} height={35} src={css} alt="" />
               <Image width={35} height={35} src={tailwind} alt="" />

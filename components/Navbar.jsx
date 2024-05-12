@@ -37,7 +37,7 @@ const Navbar = () => {
       }
     >
       <motion.div
-        className="flex justify-between items-center px-2 mx-auto h-full text-black font-bold 2xl:px-16"
+        className="flex justify-between bg-gradient-to-r from-purple-200 to-purple-500 items-center px-2 mx-auto h-full text-black font-bold 2xl:px-16"
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5 }}
