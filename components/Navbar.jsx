@@ -13,12 +13,20 @@ import { HiOutlineMenuAlt3 } from "react-icons/hi";
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
+  const [navChange, setNavChange] = useState(false);
   const handleNavigation = () => {
     setNav(!nav);
   };
-  const router = useRouter();
 
-  const path = usePathname();
+  const pathname = usePathname();
+  useEffect(() => {
+    if (pathname === "/research") {
+      setNavChange(true);
+    } else {
+      setNavChange(false);
+    }
+  }, [pathname]);
+
   useEffect(() => {
     const handleShadow = () => {
       if (window.scrollY >= 90) {
@@ -33,19 +41,21 @@ const Navbar = () => {
     <div
       className={
         shadow
-          ? "fixed w-full h-20 bg-white  sm:h-28 shadow-xl z-[100]"
-          : "fixed w-full h-20 bg-white sm:h-28 z-[100] "
+          ? "fixed w-full h-20 sm:h-28 shadow-xl z-[100]"
+          : "fixed w-full h-20  sm:h-28 z-[100] "
       }
     >
       <motion.div
-        className="flex justify-between bg-gradient-to-r from-purple-200 to-purple-500 items-center px-2 mx-auto h-full text-black font-bold 2xl:px-16"
+        className={`flex justify-between   4 ${
+          navChange ? "" : "bg-gradient-to-r from-purple-200 to-purple-500"
+        }  items-center px-2 mx-auto h-full text-black font-bold 2xl:px-16`}
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5 }}
       >
         <div>
           <Link href="/">
-            <p className="font-bold text-2xl text-black">Victory.Dev</p>
+            <p className="font-bold text-2xl t">Victory.Dev</p>
           </Link>
         </div>
         <div className="hidden items-center justify-between gap-4 my-4">
@@ -74,11 +84,11 @@ const Navbar = () => {
             <BsFillPersonLinesFill className="text-black" />
           </div>
         </div>
-        <ul className="hidden text-black/50 md:flex items-center space-x-10 py-4 font-bold">
+        <ul className="hidden  text-black/50 md:flex items-center space-x-10 py-4 font-bold">
           <Link href="/">
             <motion.li
               className={`text-sm uppercase hover:border-b-2 hover:text-black ${
-                path === "/" ? "border-b-2  border-black text-black" : ""
+                pathname === "/" ? "border-b-2  border-black text-black" : ""
               }`}
               whileHover={{ scale: 1.1 }}
             >
@@ -88,7 +98,9 @@ const Navbar = () => {
           <Link href="/#about">
             <motion.li
               className={`text-sm uppercase hover:border-b-2 hover:border-black ${
-                path === "/about" ? "border-b-2 border-black text-black" : ""
+                pathname === "/#about"
+                  ? "border-b-2 border-black text-black"
+                  : ""
               }`}
               whileHover={{ scale: 1.1 }}
             >
@@ -99,11 +111,7 @@ const Navbar = () => {
           <Link href="/#projects">
             <motion.li
               className={`text-sm uppercase hover:border-b-2 hover:border-black  ${
-                path === "/projects" ||
-                path === "/projects/ipaddress" ||
-                path === "/projects/shortly" ||
-                path === "/projects/studio" ||
-                path === "/projects/space"
+                pathname === "/#projects"
                   ? "border-b-2 border-black text-black"
                   : ""
               }`}
@@ -115,7 +123,9 @@ const Navbar = () => {
           <Link href="/#contact">
             <motion.li
               className={`text-sm uppercase hover:border-b-2 hover:border-black  ${
-                path === "/contact" ? "border-b-2 border-black text-black" : ""
+                pathname === "/#contact"
+                  ? "border-b-2 border-black text-black"
+                  : ""
               }`}
               whileHover={{ scale: 1.1 }}
             >
