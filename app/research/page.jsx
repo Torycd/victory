@@ -4,7 +4,7 @@ import React from "react";
 const page = () => {
   return (
     <div className="w-full h-screen flex flex-col justify-center space-y-10 items-center px-16">
-      <div className="w-full mx-auto flex flex-row gap-5">
+      <div className="w-full mx-auto flex flex-col  md:flex-row gap-5">
         <div className="w-full">
           <img
             className="w-full opacity-80 rounded-lg h-[500px] object-cover"
