@@ -1,5 +1,5 @@
 import React from "react";
-import { FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
+import { FaGithub, FaLinkedinIn, FaTwitter, FaWhatsapp } from "react-icons/fa";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 import Link from "next/link";
 
@@ -31,12 +31,19 @@ const Footer = () => {
             <FaGithub className="text-white" size={35} />
           </a>
           <a
-                  href="https://twitter.com/VIdundun"
-                  target="_blank"
-                  className="cursor-pointer hover:scale-105 ease-in duration-300"
-                >
-                  <FaTwitter className="text-black" size={35} />
-                </a>
+            href="https://twitter.com/VIdundun"
+            target="_blank"
+            className="cursor-pointer hover:scale-105 ease-in duration-300"
+          >
+            <FaTwitter className="text-white" size={35} />
+          </a>
+          <a
+            href="https://wa.me/+234702597846"
+            target="_blank"
+            className="cursor-pointer hover:scale-105 ease-in duration-300"
+          >
+            <FaWhatsapp className="text-white" size={35} />
+          </a>
         </div>
         <div className="flex justify-center md:justify-end">
           <Link href="/">

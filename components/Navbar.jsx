@@ -8,6 +8,7 @@ import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { usePathname, useRouter } from "next/navigation";
 import { motion } from "framer-motion";
+import { HiOutlineMenuAlt3 } from "react-icons/hi";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -123,7 +124,7 @@ const Navbar = () => {
           </Link>
         </ul>
         <div onClick={handleNavigation} className="md:hidden">
-          <AiOutlineMenu className="text-black" size={30} />
+          <HiOutlineMenuAlt3 className="text-black" size={30} />
         </div>
       </motion.div>
 
