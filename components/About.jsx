@@ -7,7 +7,7 @@ const About = () => {
     <div id="about" className="w-full px-2">
       <div className="max-w-[1200px] mx-auto">
         <div className="grid sm:grid-cols-2 gap-10">
-          <div className="relative col-span-1 rounded-lg group hover:bg-gradient-to-r from-blue-200 to-blue-500">
+          <div className="relative col-span-1 rounded-lg group hover:bg-gradient-to-r from-purple-200 to-purple-500">
             <Image
               src={contact}
               className="rounded-lg group-hover:opacity-10"
@@ -32,7 +32,7 @@ const About = () => {
             </div>
           </div>
           <div className="col-span-1 space-y-2">
-            <h2 className="text-blue-600">ABOUT ME</h2>
+            <h2 className="text-purple-500">ABOUT ME</h2>
             <h3>A dedidcated Frontend developer based in Nigeria</h3>
             <p>
               As a frontend developer, I don&apos;t just write code; I craft

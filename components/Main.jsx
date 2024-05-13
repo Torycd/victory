@@ -70,7 +70,7 @@ const Main = () => {
               <div className="mt-5 flex justify-center md:justify-normal">
                 <a
                   href="/assets/Comprehensive%20CV.pdf"
-                  className="text-center p-4 rounded-lg bg-purple-600 text-white font-bold text-lg cursor-pointer"
+                  className="text-center p-4 rounded-lg bg-gradient-to-r from-purple-200 to-purple-500 text-white font-bold text-lg cursor-pointer hover:scale-105 ease-in duration-300"
                   download
                 >
                   Download Resume
