@@ -7,7 +7,7 @@ const page = () => {
       <div className="w-full mx-auto flex flex-col  md:flex-row gap-5">
         <div className="w-full">
           <img
-            className="w-full opacity-80 rounded-lg h-[500px] object-cover"
+            className="w-full opacity-80 rounded-lg md:h-[500px] object-cover"
             src="https://i0.wp.com/www.sciencenews.org/wp-content/uploads/2019/04/032619_ec_quantum-engine_feat_free.jpg?fit=860%2C460&ssl=1"
             alt="alt"
           />
