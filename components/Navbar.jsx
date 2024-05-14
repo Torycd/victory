@@ -47,7 +47,7 @@ const Navbar = () => {
     >
       <motion.div
         className={`flex justify-between   4 ${
-          navChange ? "" : "bg-gradient-to-r from-purple-200 to-purple-500"
+          navChange ? "bg-white" : "bg-gradient-to-r from-purple-200 to-purple-500"
         }  items-center px-2 mx-auto h-full text-black font-bold 2xl:px-16`}
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
