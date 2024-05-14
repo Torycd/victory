@@ -20,7 +20,7 @@ const Navbar = () => {
 
   const pathname = usePathname();
   useEffect(() => {
-    if (pathname === "/research") {
+    if (pathname === "/netflix" || pathname === "/ipaddress" || pathname === "/shortly") {
       setNavChange(true);
     } else {
       setNavChange(false);
@@ -47,7 +47,7 @@ const Navbar = () => {
     >
       <motion.div
         className={`flex justify-between   4 ${
-          navChange ? "bg-white" : "bg-gradient-to-r from-purple-200 to-purple-500"
+          navChange ? "text-white" : "bg-gradient-to-r from-purple-200 to-purple-500"
         }  items-center px-2 mx-auto h-full text-black font-bold 2xl:px-16`}
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
@@ -55,7 +55,7 @@ const Navbar = () => {
       >
         <div>
           <Link href="/">
-            <p className="font-bold text-2xl t">Victory.Dev</p>
+            <p className="font-bold text-2xl">Victory.Dev</p>
           </Link>
         </div>
         <div className="hidden items-center justify-between gap-4 my-4">
@@ -84,7 +84,7 @@ const Navbar = () => {
             <BsFillPersonLinesFill className="text-black" />
           </div>
         </div>
-        <ul className="hidden  text-black/50 md:flex items-center space-x-10 py-4 font-bold">
+        <ul className={`hidden ${navChange ? "text-white" : "text-black/50" }   md:flex items-center space-x-10 py-4 font-bold`}>
           <Link href="/">
             <motion.li
               className={`text-sm uppercase hover:border-b-2 hover:text-black ${

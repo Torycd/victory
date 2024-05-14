@@ -26,7 +26,7 @@ const ProjectItem = () => {
               netflix
             </h3>
             <p className="pb-4 pt-2 text-white text-center">React JS</p>
-            <Link href="/">
+            <Link href="/netflix">
               <p className="text-center p-2 rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer">
                 More Info
               </p>
@@ -112,7 +112,7 @@ const ProjectItem = () => {
               shortly
             </h3>
             <p className="pb-4 pt-2 text-white text-center">React JS</p>
-            <Link href="/">
+            <Link href="/shortly">
               <p className="text-center p-2 rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer">
                 More Info
               </p>
@@ -135,7 +135,7 @@ const ProjectItem = () => {
               Ip Address
             </h3>
             <p className="pb-4 pt-2 text-white text-center">React JS</p>
-            <Link href="/">
+            <Link href="/ipaddress">
               <p className="text-center p-2 rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer">
                 More Info
               </p>
@@ -222,7 +222,7 @@ const ProjectItem = () => {
               Space Tourism
             </h3>
             <p className="pb-4 pt-2 text-white text-center">React JS</p>
-            <Link href="/">
+            <Link href="/space">
               <p className="text-center p-2 rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer">
                 More Info
               </p>
