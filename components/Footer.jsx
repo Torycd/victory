@@ -44,9 +44,9 @@ const Footer = () => {
           >
             <FaWhatsapp className="text-white" size={35} />
           </a>
-          <Link href="/research" className="hidden md:block p-2 border-white border-2 font-bold text-white">
+          <a target="_blank" href="https://inspirehep.net/literature/2657365" className="hidden md:block p-2 border-white border-2 font-bold text-white">
             Researcher
-          </Link>
+          </a>
         </div>
         <div className="flex justify-center md:justify-end">
           <Link href="/">
