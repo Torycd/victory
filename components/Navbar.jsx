@@ -20,7 +20,7 @@ const Navbar = () => {
 
   const pathname = usePathname();
   useEffect(() => {
-    if (pathname === "/netflix" || pathname === "/ipaddress" || pathname === "/shortly") {
+    if (pathname === "/netflix" || pathname === "/ipaddress" || pathname === "/shortly" || pathname === "/space" || pathname === "/dashboard") {
       setNavChange(true);
     } else {
       setNavChange(false);
@@ -134,7 +134,7 @@ const Navbar = () => {
           </Link>
         </ul>
         <div onClick={handleNavigation} className="md:hidden">
-          <HiOutlineMenuAlt3 className="text-black" size={30} />
+          <HiOutlineMenuAlt3 className={navChange ? "text-white" : "text-black"} size={30} />
         </div>
       </motion.div>
 

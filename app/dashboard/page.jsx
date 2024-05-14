@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import image1 from "../../public/assets/project/project4.JPG";
+import image1 from "../../public/assets/project/project5.JPG";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
 
@@ -17,7 +17,7 @@ const page = () => {
           alt="/"
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] z-10 text-white">
-          <h2 className="py-2">Space Tourism App</h2>
+          <h2 className="py-2">DashBoard App</h2>
           <h3>React JS / Tailwind</h3>
         </div>
       </div>
@@ -26,22 +26,21 @@ const page = () => {
           <p>Project</p>
           <h2>Overview </h2>
           <p>
-            The Space Tourism App serves as a practical demonstration of routing
-            within a React application, featuring numerous paths a multi-page
-            website showcasing various space views and planetary bodies.
+            This App is a dsadhboard with good UI to show the spending, budget
+            and savings of the user.
           </p>
           <div>
             <a
-              href="https://github.com/Torycd/shortlyapi"
+              href="https://dashhh-eosin.vercel.app/"
               target="_blank"
-              className="px-8 py-2 mt-4 text-white mr-8 bg-black rounded-lg"
+              className="px-8 py-2 mt-4 text-white mr-8 bg-orange-500 rounded-lg"
             >
               DEMO
             </a>
             <a
-              href="https://shortlyapi-smoky.vercel.app/"
+              href="https://github.com/Torycd/dashhh"
               target="_blank"
-              className="px-8 py-2 mt-4 text-white bg-black rounded-lg"
+              className="px-8 py-2 mt-4 text-white bg-orange-500 rounded-lg"
             >
               CODE
             </a>

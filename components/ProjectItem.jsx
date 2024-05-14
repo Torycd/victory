@@ -231,7 +231,7 @@ const ProjectItem = () => {
         </div>
       </div>
 
-      {/* Loop studio */}
+      {/* Dashboard */}
       <div className="grid md:grid-cols-2 gap-5">
         {/* image */}
         <div className="relative rounded-lg col-span-1 group hover:bg-gradient-to-r from-orange-200 to-orange-500">
@@ -245,7 +245,7 @@ const ProjectItem = () => {
               Space Tourism
             </h3>
             <p className="pb-4 pt-2 text-white text-center">React JS</p>
-            <Link href="/">
+            <Link href="/dashboard">
               <p className="text-center p-2 rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer">
                 More Info
               </p>
