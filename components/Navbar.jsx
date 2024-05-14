@@ -47,8 +47,8 @@ const Navbar = () => {
     <div
       className={
         shadow
-          ? "fixed w-full h-20 sm:h-28 shadow-xl z-[100]"
-          : "fixed w-full h-20  sm:h-28 z-[100] "
+          ? "fixed w-full h-20 sm:h-24 shadow-xl z-[100]"
+          : "fixed w-full h-20  sm:h-24 z-[100] "
       }
     >
       <motion.div
