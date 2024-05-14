@@ -6,7 +6,10 @@ const Publication = () => {
       <div className="md:mx-16 space-y-5">
         <h2 className="text-red-500">Publication</h2>
         <div className=" bg-gray-100 p-4">
-          <h2>The Performance Analysis of a Quantum-Mechanical</h2>
+          <h2>
+            The Performance Analysis of a Quantum-Mechanical Carnot-like Engine
+            using Diatomic Molecules
+          </h2>
           <p>
             <span className="font-bold">Abstract</span>
             This study presents an analysis of a quantum mechanical formulation
@@ -21,7 +24,9 @@ const Publication = () => {
             agree with those obtained for similar engine but with different
             working substance.
           </p>
+          <a href="https://inspirehep.net/literature/2657365" >Reference</a>
         </div>
+
       </div>
     </div>
   );
