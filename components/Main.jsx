@@ -81,7 +81,7 @@ const Main = () => {
               <div className="p-2 shadow-xl">
                 <Image
                   src={myPhoto}
-                  height={480}
+                  height={430}
                   className=" rounded-lg object-cover"
                   alt="My photograph"
                 />
