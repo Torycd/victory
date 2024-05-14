@@ -94,14 +94,14 @@ const Main = () => {
               <span className="hidden md:block">|</span>
             </div>
             <div className="grid grid-cols-4 md:grid-cols-8 gap-5 md:gap-10">
-              <Image width={35} height={35} src={html} alt="" />
-              <Image width={35} height={35} src={css} alt="" />
-              <Image width={35} height={35} src={tailwind} alt="" />
-              <Image width={35} height={35} src={github} alt="" />
-              <Image width={35} height={35} src={javascript} alt="" />
-              <Image width={35} height={35} src={react} alt="" />
-              <Image width={35} height={35} src={next} alt="" />
-              <Image width={35} height={35} src={firebase} alt="" />
+              <Image width={35} height={35} src={html} alt="html logo" />
+              <Image width={35} height={35} src={css} alt="css logo" />
+              <Image width={35} height={35} src={tailwind} alt="tailwind logo" />
+              <Image width={35} height={35} src={github} alt="github logo" />
+              <Image width={35} height={35} src={javascript} alt="javascript logo" />
+              <Image width={35} height={35} src={react} alt="react logo" />
+              <Image width={35} height={35} src={next} alt="next logo" />
+              <Image width={35} height={35} src={firebase} alt="firebase logo" />
             </div>
           </div>
         </div>

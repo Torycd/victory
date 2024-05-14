@@ -21,7 +21,7 @@ const Footer = () => {
             target="_blank"
             className="cursor-pointer hover:scale-105 ease-in duration-300"
           >
-            <FaLinkedinIn className="text-white" size={35} />
+            <FaLinkedinIn className="text-[#0077B5]" size={35} />
           </a>
           <a
             href="https://github.com/Torycd"
@@ -35,16 +35,20 @@ const Footer = () => {
             target="_blank"
             className="cursor-pointer hover:scale-105 ease-in duration-300"
           >
-            <FaTwitter className="text-white" size={35} />
+            <FaTwitter className="text-[#1DA1F2]" size={35} />
           </a>
           <a
             href="https://wa.me/+234702597846"
             target="_blank"
             className="cursor-pointer hover:scale-105 ease-in duration-300"
           >
-            <FaWhatsapp className="text-white" size={35} />
+            <FaWhatsapp className="text-[#25D366]" size={35} />
           </a>
-          <a target="_blank" href="https://inspirehep.net/literature/2657365" className="hidden md:block p-2 border-white border-2 font-bold text-white">
+          <a
+            target="_blank"
+            href="https://inspirehep.net/literature/2657365"
+            className="hidden md:block p-2 border-white border-2 font-bold text-white"
+          >
             Researcher
           </a>
         </div>

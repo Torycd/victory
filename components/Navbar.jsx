@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { FaGithub, FaLinkedinIn, FaTwitter, FaWhatsapp } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { usePathname, useRouter } from "next/navigation";
 import { motion } from "framer-motion";
@@ -20,7 +20,13 @@ const Navbar = () => {
 
   const pathname = usePathname();
   useEffect(() => {
-    if (pathname === "/netflix" || pathname === "/ipaddress" || pathname === "/shortly" || pathname === "/space" || pathname === "/dashboard") {
+    if (
+      pathname === "/netflix" ||
+      pathname === "/ipaddress" ||
+      pathname === "/shortly" ||
+      pathname === "/space" ||
+      pathname === "/dashboard"
+    ) {
       setNavChange(true);
     } else {
       setNavChange(false);
@@ -47,7 +53,9 @@ const Navbar = () => {
     >
       <motion.div
         className={`flex justify-between   4 ${
-          navChange ? "text-white" : "bg-gradient-to-r from-purple-200 to-purple-500"
+          navChange
+            ? "text-white"
+            : "bg-gradient-to-r from-purple-200 to-purple-500"
         }  items-center px-2 mx-auto h-full text-black font-bold 2xl:px-16`}
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
@@ -84,7 +92,11 @@ const Navbar = () => {
             <BsFillPersonLinesFill className="text-black" />
           </div>
         </div>
-        <ul className={`hidden ${navChange ? "text-white" : "text-black/50" }   md:flex items-center space-x-10 py-4 font-bold`}>
+        <ul
+          className={`hidden ${
+            navChange ? "text-white" : "text-black/50"
+          }   md:flex items-center space-x-10 py-4 font-bold`}
+        >
           <Link href="/">
             <motion.li
               className={`text-sm uppercase hover:border-b-2 hover:text-black ${
@@ -134,10 +146,13 @@ const Navbar = () => {
           </Link>
         </ul>
         <div onClick={handleNavigation} className="md:hidden">
-          <HiOutlineMenuAlt3 className={navChange ? "text-white" : "text-black"} size={30} />
+          <HiOutlineMenuAlt3
+            className={navChange ? "text-white" : "text-black"}
+            size={30}
+          />
         </div>
       </motion.div>
-
+      {/* mobile Navigation */}
       <div
         className={
           nav ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black" : ""
@@ -146,7 +161,7 @@ const Navbar = () => {
         <div
           className={
             nav
-              ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-white p-10 ease-in duration-500"
+              ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-white/95 p-10 ease-in duration-500"
               : "fixed left-[-100%] top-0 p-10 ease-in h-screen  duration-500"
           }
         >
@@ -155,15 +170,6 @@ const Navbar = () => {
             {/* logo */}
             <div>
               <p className="font-bold text-2xl text-black">Victory.Dev</p>
-            </div>
-            <div className="w-16 h-12 relative">
-              <Link href="/">
-                <Image
-                  src="/assets/Logo.png"
-                  alt="Victory's Image"
-                  layout="fill"
-                />
-              </Link>
             </div>
             {/* close home */}
             <div
@@ -176,7 +182,7 @@ const Navbar = () => {
           {/* statement */}
           <div className="border-b border-gray-300 my-4">
             <p className="w-[85%] md:w-[90%] py-4">
-              Let&apos;s build something together
+              Let&apos;s create together
             </p>
           </div>
           {/* nav item */}
@@ -205,7 +211,7 @@ const Navbar = () => {
               </Link>
             </ul>
             <div className="pt-40">
-              <p className="uppercase tracking-widest text-[#5651e5]">
+              <p className="uppercase tracking-widest text-purple-500">
                 Lets Connect
               </p>
               <div className="flex items-center justify-between my-4 w-full sm:w-[20%]">
@@ -214,7 +220,7 @@ const Navbar = () => {
                   target="_blank"
                   className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300"
                 >
-                  <FaLinkedinIn />
+                  <FaLinkedinIn className="text-[#0077B5]" />
                 </a>
                 <a
                   href="https://github.com/Torycd"
@@ -224,15 +230,19 @@ const Navbar = () => {
                   <FaGithub />
                 </a>
                 <a
-                  href="mailto:vicidundun@gmail.com"
+                  href="https://twitter.com/VIdundun"
                   target="_blank"
                   className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300"
                 >
-                  <AiOutlineMail />
+                  <FaTwitter className="text-[#1DA1F2]" />
                 </a>
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <BsFillPersonLinesFill />
-                </div>
+                <a
+                  href="https://wa.me/+234702597846"
+                  target="_blank"
+                  className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300"
+                >
+                  <FaWhatsapp className="text-[#25D366]" />
+                </a>
               </div>
             </div>
           </div>
